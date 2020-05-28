@@ -3,7 +3,7 @@
 /*---
 esid: pending
 description: >
-  The "length" property of Iterator
+  The `length` property of Iterator.from.
 info: |
   ES7 section 17: Unless otherwise specified, the length property of a built-in
   Function object has the attributes { [[Writable]]: false, [[Enumerable]]:
@@ -12,8 +12,8 @@ features: [iterator-helpers]
 includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(Iterator.length, 0);
+assert.sameValue(Iterator.from.length, 1);
 
-verifyNotEnumerable(Iterator, 'length');
-verifyNotWritable(Iterator, 'length');
-verifyConfigurable(Iterator, 'length');
+verifyNotEnumerable(Iterator.from, 'length');
+verifyNotWritable(Iterator.from, 'length');
+verifyConfigurable(Iterator.from, 'length');
