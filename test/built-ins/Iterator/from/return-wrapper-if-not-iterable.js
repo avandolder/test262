@@ -2,10 +2,7 @@
 // This code is governed by the BSD license found in the LICENSE file.
 /*---
 esid: pending
-description: >
-  Iterator.from returns an iterator wrapper if O is not an iterable.
-info: |
-
+description: Iterator.from returns an iterator wrapper if O is not an iterable.
 features: [iterator-helpers]
 ---*/
 

@@ -4,8 +4,6 @@
 esid: pending
 description: >
   Iterator.from returns an iterator wrapper if O is not an instance of Iterator.
-info: |
-
 features: [iterator-helpers]
 ---*/
 
