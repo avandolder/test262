@@ -2,12 +2,13 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: `name` property of Iterator.prototype.every.
+info: |
+  ES6 Section 17:
+    Unless otherwise specified, the name property of a built-in Function
+    object, if it exists, has the attributes { [[Writable]]: false,
+    [[Enumerable]]: false, [[Configurable]]: true }.
 features: [iterator-helpers]
----*/
-
-/*---
-  `name` property of Iterator.prototype.every.
 ---*/
 
 const propDesc = Reflect.getOwnPropertyDescriptor(Iterator.prototype.every, 'name');

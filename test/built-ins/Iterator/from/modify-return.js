@@ -2,7 +2,7 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: %WrapForValidIteratorPrototype%.return calls the modified return method.
 features: [iterator-helpers]
 ---*/
 

@@ -1,16 +1,37 @@
-//
+// Copyright 2020 Mozilla Corporation. All rights reserved.
+// This code is governed by the license found in the LICENSE file.
+/*---
+esid: pending
+description:
+features: [iterator-helpers]
+---*/
+
 //
 
 /*---
 esid: pending
 description: %Iterator.prototype%.map calls return when yield throws.
 info: >
-features: [Symbol.iterator]
+features: [iterator-helpers]
 ---*/
 
-const IteratorPrototype = Object.getPrototypeOf(
-  Object.getPrototypeOf([][Symbol.iterator]())
-);
+class TestError extends Error {}
+
+class TestIterator extends Iterator {
+  constructor(log) {
+    super();
+    this.log = log;
+  }
+
+  next() {
+    return {done: false, value: 0};
+  }
+
+  return(value) {
+    log.push('close iterator');
+    return {done: true, value};
+  }
+}
 
 const handlerProxy = log => new Proxy({}, {
   get: (target, key, receiver) => (...args) => {
@@ -28,25 +49,12 @@ const handlerProxy = log => new Proxy({}, {
 });
 
 const log = [];
-const iterator = Object.setPrototypeOf({
-  next: function() {
-    return { done: false, value: 0 };
-  },
-  return: function() {
-    log.push('close iterator');
-  },
-}, IteratorPrototype);
+const iterator = new TestIterator(log);
 const iteratorProxy = new Proxy(iterator, handlerProxy(log));
 const mappedProxy = iteratorProxy.map(x => x);
 
 mappedProxy.next();
-
-try {
-  mappedProxy.throw('error');
-} catch (exc) {
-  assert.sameValue(exc, 'error');
-}
-
+assert.throws(TestError, () => mappedProxy.throw(new TestError()));
 mappedProxy.next();
 
 assert.sameValue(

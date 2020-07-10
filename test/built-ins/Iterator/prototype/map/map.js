@@ -1,22 +1,17 @@
-//
-//
-
+// Copyright (C) 2020 Mozilla Corporation. All rights reserved.
+// This code is governed by the BSD license found in the LICENSE file.
 /*---
 esid: pending
 description: %Iterator.prototype%.map value and descriptor.
 info: >
   17 ECMAScript Standard Built-in Objects
-features: [Symbol.iterator]
+features: [iterator-helpers]
 ---*/
 
-const IteratorPrototype = Object.getPrototypeOf(
-  Object.getPrototypeOf([][Symbol.iterator]())
-);
-
-const map = Reflect.getOwnPropertyDescriptor(IteratorPrototype, 'map');
+const map = Reflect.getOwnPropertyDescriptor(Iterator.prototype, 'map');
 
 assert.sameValue(
-  IteratorPrototype.map, map.value,
+  Iterator.prototype.map, map.value,
   'The value of `%Iterator.prototype%.map` is the same as the value in the property descriptor.'
 );
 

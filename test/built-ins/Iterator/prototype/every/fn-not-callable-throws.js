@@ -2,13 +2,15 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: %Iterator.prototype%.drop throws when passed non-callables.
+info: >
+  Iterator Helpers proposal 2.1.5.12
 features: [iterator-helpers]
 ---*/
 
-
 const iter = [].values();
 
+assert.throws(TypeError, () => iter.every());
 assert.throws(TypeError, () => iter.every(undefined));
 assert.throws(TypeError, () => iter.every(null));
 assert.throws(TypeError, () => iter.every(0));

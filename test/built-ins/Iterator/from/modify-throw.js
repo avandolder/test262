@@ -2,7 +2,7 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: %WrapForValidIteratorPrototype%.throw calls the modified throw method.
 features: [iterator-helpers]
 ---*/
 

@@ -2,7 +2,9 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: `from` works when called with an undefined `this` value.
+info: |
+  Iterator Helpers proposal 2.1.3.3.1
 features: [iterator-helpers]
 ---*/
 

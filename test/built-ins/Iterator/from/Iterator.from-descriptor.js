@@ -4,9 +4,12 @@
 esid: pending
 description: Descriptor property of Iterator.from
 features: [iterator-helpers]
-includes: [propertyHelper.js]
 ---*/
 
-verifyWritable(Iterator, 'from');
-verifyNotEnumerable(Iterator, 'from');
-verifyConfigurable(Iterator, 'from');
+const propDesc = Reflect.getOwnPropertyDescriptor(Iterator, 'from');
+assert.sameValue(propDesc.writable, true);
+assert.sameValue(propDesc.enumerable, false);
+assert.sameValue(propDesc.configurable, true);
+
+if (typeof reportCompare === 'function')
+  reportCompare(0, 0);

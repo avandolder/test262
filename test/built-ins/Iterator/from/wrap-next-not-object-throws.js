@@ -2,7 +2,13 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Wrapped next methods must return objects.
+info: |
+  Iterator Helpers proposal 2.1.3.3.1.1.1
+
+  ECMA262 7.4.2 IteratorNext ( iteratorRecord [ , value ] )
+  3. If Type(result) is not Object, throw a TypeError exception.
+
 features: [iterator-helpers]
 ---*/
 

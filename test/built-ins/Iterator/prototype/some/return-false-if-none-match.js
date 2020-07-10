@@ -12,5 +12,7 @@ const fn = (value) => value % 2 == 0;
 
 assert.sameValue(iter.some(fn), false);
 
+assert.sameValue([].values().some(x => x), false);
+
 if (typeof reportCompare === 'function')
   reportCompare(0, 0);

@@ -3,10 +3,20 @@
 /*---
 esid: pending
 description:
+description: %WrapForValidIteratorPrototype%.return closes the source iterator.
+info: |
+  Iterator Helpers proposal
+  2.1.3.3.1.1.2 %WrapForValidIteratorPrototype%.return ( v )
+
+  1. Let O be this value.
+  2. RequireInternalSlot(O, [[Iterated]]).
+  3. Let result be ? IteratorClose(O.[[Iterated]], NormalCompletion(v)).
+  4. Return CreateIterResultObject(result, true).
+
 features: [iterator-helpers]
 ---*/
 
-class Iter {
+class TestIterator {
   next() {
     if (this.closed)
       return { done: true, value: undefined };
@@ -19,7 +29,7 @@ class Iter {
   }
 }
 
-const iter = new Iter();
+const iter = new TestIterator();
 const wrap = Iterator.from(iter);
 assert.sameValue(iter.closed, undefined);
 

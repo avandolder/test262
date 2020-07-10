@@ -2,10 +2,14 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: `every` never accesses @@iterator and only gets the `next` property off the source iterator once.
+info: |
+  Iterator Helpers proposal 2.1.5.12
 features: [iterator-helpers]
 ---*/
 
+// This test checks that %Iterator.prototype%.every only gets the `next` method off of the
+// iterator once, and never accesses the @@iterator property.
 const log = [];
 const handlerProxy = new Proxy({}, {
   get: (target, key, receiver) => (...args) => {

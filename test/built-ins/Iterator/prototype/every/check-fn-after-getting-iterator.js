@@ -2,7 +2,14 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: `fn` is checked to be callable after the source iterator is gotten.
+info: |
+  Iterator Helpers proposal
+  2.1.5.12 %Iterator.prototype%.every ( fn )
+
+  1. Let iterated be ? GetIteratorDirect(this value).
+  2. If IsCallable(fn) is false, throw a TypeError exception.
+
 features: [iterator-helpers]
 ---*/
 

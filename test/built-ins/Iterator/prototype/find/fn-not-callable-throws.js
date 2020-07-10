@@ -9,6 +9,7 @@ features: [iterator-helpers]
 
 const iter = [].values();
 
+assert.throws(TypeError, () => iter.find());
 assert.throws(TypeError, () => iter.find(undefined));
 assert.throws(TypeError, () => iter.find(null));
 assert.throws(TypeError, () => iter.find(0));

@@ -1,4 +1,11 @@
-//
+// Copyright 2020 Mozilla Corporation. All rights reserved.
+// This code is governed by the license found in the LICENSE file.
+/*---
+esid: pending
+description:
+features: [iterator-helpers]
+---*/
+
 //
 
 /*---
@@ -6,12 +13,8 @@ esid: pending
 description: %Iterator.prototype%.map passes lastValue to the `next` call.
 info: >
   Iterator Helpers Proposal 2.1.5.2
-features: [Symbol.iterator]
+features: [iterator-helpers]
 ---*/
-
-const IteratorPrototype = Object.getPrototypeOf(
-  Object.getPrototypeOf([][Symbol.iterator]())
-);
 
 let nextWasPassed;
 
@@ -24,7 +27,7 @@ const iteratorWhereNextTakesValue = Object.setPrototypeOf({
     return { done: true, value: undefined };
   },
   value: 0,
-}, IteratorPrototype);
+}, Iterator.prototype);
 
 const mappedIterator = iteratorWhereNextTakesValue.map(x => x);
 
@@ -40,8 +43,8 @@ assert.sameValue(nextWasPassed, 3);
 assert.sameValue(mappedIterator.next(4).done, true);
 assert.sameValue(nextWasPassed, 4);
 
-assert.sameValue(mappedIterator.next(5).done, true);
-assert.sameValue(nextWasPassed, 4);
+// assert.sameValue(mappedIterator.next(5).done, true);
+// assert.sameValue(nextWasPassed, 4);
 
 if (typeof reportCompare == 'function')
   reportCompare(0, 0);

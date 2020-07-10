@@ -1,29 +1,26 @@
-//
-//
+// Copyright 2020 Mozilla Corporation. All rights reserved.
+// This code is governed by the license found in the LICENSE file.
+/*---
+esid: pending
+description:
+features: [iterator-helpers]
+---*/
 
 /*---
 esid: pending
 description: %Iterator.prototype%.map.name value and descriptor.
 info: >
   17 ECMAScript Standard Built-in Objects
-includes: [propertyHelper.js]
-features: [Symbol.iterator]
+features: [iterator-helpers]
 ---*/
 
-const IteratorPrototype = Object.getPrototypeOf(
-  Object.getPrototypeOf([][Symbol.iterator]())
-);
+assert.sameValue(Iterator.prototype.map.name, 'map');
 
-assert.sameValue(
-  IteratorPrototype.map.name, 'map',
-  'The value of `%Iterator.prototype%.map.name` is `"map"`'
-);
-
-verifyProperty(IteratorPrototype.map, 'name', {
-  enumerable: false,
-  writable: false,
-  configurable: true,
-});
+const propertyDescriptor = Reflect.getOwnPropertyDescriptor(Iterator.prototype.map, 'name');
+assert.sameValue(propertyDescriptor.value, 'map');
+assert.sameValue(propertyDescriptor.enumerable, false);
+assert.sameValue(propertyDescriptor.writable, false);
+assert.sameValue(propertyDescriptor.configurable, true);
 
 if (typeof reportCompare == 'function')
   reportCompare(0, 0);

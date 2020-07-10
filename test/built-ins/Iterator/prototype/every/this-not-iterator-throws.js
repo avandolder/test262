@@ -2,10 +2,14 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: `every` throws if this is not a valid iterator.
+info: |
+  Iterator Helpers proposal
+  2.1.5.12 %Iterator.prototype%.every ( fn )
+  1. Let iterated be ? GetIteratorDirect(this value).
+
 features: [iterator-helpers]
 ---*/
-
 
 const fn = x => x;
 assert.throws(TypeError, Iterator.prototype.every.bind(undefined, fn));

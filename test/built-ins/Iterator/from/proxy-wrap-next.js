@@ -2,7 +2,9 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: %WrapForValidIteratorPrototype%.next doesn't get the next property off the iterator.
+info: |
+  Iterator Helpers proposal 2.1.3.3.1
 features: [iterator-helpers]
 ---*/
 

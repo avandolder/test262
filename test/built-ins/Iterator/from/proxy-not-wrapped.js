@@ -2,7 +2,9 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Iterator.from gets @@iterator and next off an iterable object.
+info: |
+  Iterator Helpers proposal 2.1.3.3.1
 features: [iterator-helpers]
 ---*/
 
@@ -18,15 +20,12 @@ const handlerProxy = new Proxy({}, {
   },
 });
 
-class Iter extends Iterator {
-  [Symbol.iterator]() {
-    return this;
-  }
+class TestIterator extends Iterator {
   next() {
     return { done: false, value: 0 };
   }
 }
-const iter = new Iter();
+const iter = new TestIterator();
 const proxy = new Proxy(iter, handlerProxy);
 const wrap = Iterator.from(proxy);
 

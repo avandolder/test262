@@ -2,12 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Descriptor property of Iterator.prototype.every
 features: [iterator-helpers]
----*/
-
-/*---
-  Descriptor property of Iterator.prototype.every
 ---*/
 
 const propDesc = Reflect.getOwnPropertyDescriptor(Iterator.prototype, 'every');

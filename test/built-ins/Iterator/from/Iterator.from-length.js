@@ -1,19 +1,20 @@
-// Copyright (C) 2020 Mozilla Corporation. All rights reserved.
-// This code is governed by the BSD license found in the LICENSE file.
+// Copyright 2020 Mozilla Corporation. All rights reserved.
+// This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description: >
-  The `length` property of Iterator.from.
+description: The `length` property of Iterator.from.
 info: |
   ES7 section 17: Unless otherwise specified, the length property of a built-in
   Function object has the attributes { [[Writable]]: false, [[Enumerable]]:
   false, [[Configurable]]: true }.
 features: [iterator-helpers]
-includes: [propertyHelper.js]
 ---*/
 
-assert.sameValue(Iterator.from.length, 1);
+const propDesc = Reflect.getOwnPropertyDescriptor(Iterator.from, 'length');
+assert.sameValue(propDesc.value, 1);
+assert.sameValue(propDesc.writable, false);
+assert.sameValue(propDesc.enumerable, false);
+assert.sameValue(propDesc.configurable, true);
 
-verifyNotEnumerable(Iterator.from, 'length');
-verifyNotWritable(Iterator.from, 'length');
-verifyConfigurable(Iterator.from, 'length');
+if (typeof reportCompare === 'function')
+  reportCompare(0, 0);

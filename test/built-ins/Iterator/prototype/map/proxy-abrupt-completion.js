@@ -1,16 +1,19 @@
-//
+// Copyright 2020 Mozilla Corporation. All rights reserved.
+// This code is governed by the license found in the LICENSE file.
+/*---
+esid: pending
+description:
+features: [iterator-helpers]
+---*/
+
 //
 
 /*---
 esid: pending
 description: %Iterator.prototype%.map accesses specified properties only.
 info: >
-features: [Symbol.iterator]
+features: [iterator-helpers]
 ---*/
-
-const IteratorPrototype = Object.getPrototypeOf(
-  Object.getPrototypeOf([][Symbol.iterator]())
-);
 
 const handlerProxy = log => new Proxy({}, {
   get: (target, key, receiver) => (...args) => {
@@ -32,10 +35,11 @@ const iterator = Object.setPrototypeOf({
   next: function() {
     return { done: false, value: 0 };
   },
-  return: function() {
+  return: function(value) {
     log.push('close iterator');
+    return { done: true, value };
   },
-}, IteratorPrototype);
+}, Iterator.prototype);
 const iteratorProxy = new Proxy(iterator, handlerProxy(log));
 const mappedProxy = iteratorProxy.map(x => { throw 'error'; });
 

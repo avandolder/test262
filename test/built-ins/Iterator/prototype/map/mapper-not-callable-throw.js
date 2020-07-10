@@ -1,37 +1,40 @@
-//
+// Copyright 2020 Mozilla Corporation. All rights reserved.
+// This code is governed by the license found in the LICENSE file.
+/*---
+esid: pending
+description:
+features: [iterator-helpers]
+---*/
+
 //
 
 /*---
 esid: pending
 description: Eagerly throw TypeError when `mapper` is not callable.
 info:
-features: []
+features: [iterator-helpers]
 ---*/
 
-const IteratorPrototype = Object.getPrototypeOf(
-  Object.getPrototypeOf([][Symbol.iterator]())
-);
-
-assert.throws(TypeError, () => IteratorPrototype.map(undefined));
+assert.throws(TypeError, () => Iterator.prototype.map(undefined));
 assert.throws(TypeError, () => [].values().map(undefined));
 
-assert.throws(TypeError, () => IteratorPrototype.map(null));
+assert.throws(TypeError, () => Iterator.prototype.map(null));
 assert.throws(TypeError, () => [].values().map(null));
 
-assert.throws(TypeError, () => IteratorPrototype.map(0));
+assert.throws(TypeError, () => Iterator.prototype.map(0));
 assert.throws(TypeError, () => [].values().map(0));
 
-assert.throws(TypeError, () => IteratorPrototype.map(false));
+assert.throws(TypeError, () => Iterator.prototype.map(false));
 assert.throws(TypeError, () => [].values().map(false));
 
-assert.throws(TypeError, () => IteratorPrototype.map({}));
+assert.throws(TypeError, () => Iterator.prototype.map({}));
 assert.throws(TypeError, () => [].values().map({}));
 
-assert.throws(TypeError, () => IteratorPrototype.map(''));
+assert.throws(TypeError, () => Iterator.prototype.map(''));
 assert.throws(TypeError, () => [].values().map(''));
 
-assert.throws(TypeError, () => IteratorPrototype.map(new Symbol('')));
-assert.throws(TypeError, () => [].values().map(new Symbol('')));
+assert.throws(TypeError, () => Iterator.prototype.map(Symbol('')));
+assert.throws(TypeError, () => [].values().map(Symbol('')));
 
 if (typeof reportCompare == 'function')
-    reportCompare(0, 0);
+  reportCompare(0, 0);

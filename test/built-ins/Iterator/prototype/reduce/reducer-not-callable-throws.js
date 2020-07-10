@@ -14,6 +14,7 @@ class TestIterator extends Iterator {
 }
 
 const iter = new TestIterator();
+assert.throws(TypeError, () => iter.reduce());
 assert.throws(TypeError, () => iter.reduce(undefined));
 assert.throws(TypeError, () => iter.reduce(null));
 assert.throws(TypeError, () => iter.reduce(0));

@@ -2,12 +2,12 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: All methods on %WrapForValidIteratorPrototype% require an [[Iterated]] slot.
+info: |
+  Iterator Helpers proposal 2.1.3.3.1.1.1-2.1.3.3.1.1.3
 features: [iterator-helpers]
 ---*/
 
-// All methods on %WrapForValidIteratorPrototype% require an [[Iterated]]
-// internal slot on the `this` object.
 
 class TestIterator {
   next() {
@@ -27,7 +27,7 @@ assert.throws(TypeError, () => nextMethod.call('test'));
 assert.throws(TypeError, () => nextMethod.call(Object(1)));
 assert.throws(TypeError, () => nextMethod.call({}));
 
-const returnMethod = Iterator.from(new TestIterator()).next;
+const returnMethod = Iterator.from(new TestIterator()).return;
 assert.throws(TypeError, () => returnMethod.call(undefined));
 assert.throws(TypeError, () => returnMethod.call(null));
 assert.throws(TypeError, () => returnMethod.call(0));
@@ -36,7 +36,7 @@ assert.throws(TypeError, () => returnMethod.call('test'));
 assert.throws(TypeError, () => returnMethod.call(Object(1)));
 assert.throws(TypeError, () => returnMethod.call({}));
 
-const throwMethod = Iterator.from(new TestIterator()).next;
+const throwMethod = Iterator.from(new TestIterator()).throw;
 assert.throws(TypeError, () => throwMethod.call(undefined));
 assert.throws(TypeError, () => throwMethod.call(null));
 assert.throws(TypeError, () => throwMethod.call(0));

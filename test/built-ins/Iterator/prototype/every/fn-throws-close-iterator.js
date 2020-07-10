@@ -2,10 +2,18 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: The source iterator is closed if `fn` throws.
+info: |
+  Iterator Helpers proposal
+  2.1.5.12 %Iterator.prototype%.every ( fn )
+  [...]
+  3. Repeat,
+    [...]
+    d. Let result be Call(fn, undefined, « value »).
+    e. IfAbruptCloseIterator(result, iterated).
+
 features: [iterator-helpers]
 ---*/
-
 
 class TestIterator extends Iterator {
   next() {
