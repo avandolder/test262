@@ -2,10 +2,10 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If getting value fails, don't close the iterator.
+info: _
 features: [iterator-helpers]
 ---*/
-
 
 class TestError extends Error {}
 class TestIterator extends Iterator {

@@ -2,15 +2,6 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-
-//
-//
-/*---
-esid: pending
 description: %Iterator.prototype%.flatMap innerIterator can be a generator.
 info: >
   Iterator Helpers proposal 2.1.5.7

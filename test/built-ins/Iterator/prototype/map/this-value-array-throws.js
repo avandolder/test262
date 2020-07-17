@@ -2,16 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-//
-
-/*---
-esid: pending
 description: TypeError is thrown if `this` is an Array.
-info:
+info: _
 features: [iterator-helpers]
 ---*/
 

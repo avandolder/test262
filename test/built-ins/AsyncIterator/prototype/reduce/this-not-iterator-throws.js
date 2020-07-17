@@ -2,11 +2,11 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: _
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
-
 
 const sum = (x, y) => x + y;
 function check(x) {
@@ -18,10 +18,12 @@ function check(x) {
   );
 }
 
-check();
-check(undefined);
-check({});
-check({next: 0});
+(async () => {
+  await check();
+  await check(undefined);
+  await check({});
+  await check({next: 0});
+})().then($DONE, $DONE);
 
 if (typeof reportCompare === 'function')
   reportCompare(0, 0);

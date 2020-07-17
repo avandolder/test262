@@ -2,16 +2,6 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-flags: [async]
-features: [iterator-helpers]
----*/
-
-
-//
-//
-/*---
-esid: pending
 description: %AsyncIterator.prototype%.take returns if the iterator is done.
 info: >
   Iterator Helpers proposal 2.1.6.4

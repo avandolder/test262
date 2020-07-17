@@ -2,12 +2,6 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-/*---
-esid: pending
 description: %Iterator.prototype%.map.name value and descriptor.
 info: >
   17 ECMAScript Standard Built-in Objects

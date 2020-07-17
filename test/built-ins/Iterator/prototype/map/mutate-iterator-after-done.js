@@ -2,16 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-//
-
-/*---
-esid: pending
 description: Mutate an iterator after it has been mapped and returned done.
-info:
+info: _
 features: [iterator-helpers]
 ---*/
 

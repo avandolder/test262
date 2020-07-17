@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If fn is not callable, throw a TypeError.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
@@ -21,14 +22,14 @@ async function check(fn) {
 }
 
 (async () => {
-  check();
-  check(undefined);
-  check(null);
-  check(0);
-  check(false);
-  check('');
-  check(Symbol(''));
-  check({});
+  await check();
+  await check(undefined);
+  await check(null);
+  await check(0);
+  await check(false);
+  await check('');
+  await check(Symbol(''));
+  await check({});
 })().then($DONE, $DONE);
 
 if (typeof reportCompare === 'function')

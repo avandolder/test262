@@ -2,16 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-//
-
-/*---
-esid: pending
 description: Eagerly throw TypeError when `mapper` is not callable.
-info:
+info: _
 features: [iterator-helpers]
 ---*/
 

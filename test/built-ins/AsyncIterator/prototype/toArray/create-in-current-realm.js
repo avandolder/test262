@@ -2,11 +2,11 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Create the array in the correct realm.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
-
 
 const otherGlobal = $262.createRealm().global;
 

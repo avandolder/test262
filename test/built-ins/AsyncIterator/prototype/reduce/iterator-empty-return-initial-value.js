@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: When the iterator is empty, return the initial value.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/

@@ -2,15 +2,6 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-
-//
-//
-/*---
-esid: pending
 description: %Iterator.prototype%.take closes the iterator when remaining is 0.
 info: >
   Iterator Helpers proposal 2.1.5.4

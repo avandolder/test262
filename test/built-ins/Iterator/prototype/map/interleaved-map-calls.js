@@ -2,16 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-//
-
-/*---
-esid: pending
 description: Interleaved %Iterator.prototype%.map calls on the same iterator.
-info:
+info: _
 features: [iterator-helpers]
 ---*/
 

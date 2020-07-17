@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Passing an AsyncIteratorHelper to an AsyncGenerator throws a TypeError
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/

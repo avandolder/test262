@@ -2,18 +2,9 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-//
-//
-
-/*---
-esid: pending
 description: %Iterator.prototype%.map works even if the global Symbol has been clobbered..
-info: 
-features: [iterator-helpers, Symbol, Symbol.iterator]
+info: _
+features: [iterator-helpers]
 ---*/
 
 Symbol = undefined;

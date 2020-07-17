@@ -2,11 +2,11 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: _
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
-
 
 const log = [];
 async function* gen(n) {
@@ -23,10 +23,7 @@ Promise.all([gen(1).some(() => {}), gen(2).some(() => {})]).then(
       '1 2 1 2',
     );
   },
-  err => {
-    throw err;
-  }
-);
+).then($DONE, $DONE);
 
 if (typeof reportCompare === 'function')
   reportCompare(0, 0);

@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: _
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
@@ -26,14 +27,17 @@ async function* gen() {
 }
 
 const iter = new Proxy(new TestIterator(), handlerProxy);
-iter.some(1).then(() => assert.sameValue(true, false, 'expected error'), err => assert.sameValue(err instanceof TypeError, true));
-
-assert.sameValue(
-  log.join('\n'),
-  `get: some
+iter.some(1).then(
+  () => assert.sameValue(true, false, 'expected error'),
+  err => {
+    assert.sameValue(err instanceof TypeError, true)
+    assert.sameValue(
+      log.join('\n'),
+      `get: some
 get: next`
-);
-
+    );
+  },
+).then($DONE, $DONE);
 
 if (typeof reportCompare === 'function')
   reportCompare(0, 0);

@@ -2,14 +2,6 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-//
-
-/*---
-esid: pending
 description: %Iterator.prototype%.map passes lastValue to the `next` call.
 info: >
   Iterator Helpers Proposal 2.1.5.2

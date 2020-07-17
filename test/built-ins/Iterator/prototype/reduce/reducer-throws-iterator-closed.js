@@ -2,10 +2,16 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If reducer throws, the iterator is closed.
+info: |
+  2.1.4.8 %Iterator.prototype%.reduce ( reducer [ , initialValue ] )
+  ...
+  5. Repeat,
+    ...
+    d. Let result be Call(reducer, undefined, « accumulator, value »).
+    e. IfAbruptCloseIterator(result, iterated).
 features: [iterator-helpers]
 ---*/
-
 
 class TestIterator extends Iterator {
   next() {

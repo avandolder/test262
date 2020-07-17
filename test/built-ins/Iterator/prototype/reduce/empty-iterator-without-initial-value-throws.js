@@ -2,10 +2,10 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: An empty iterator wihtout an initial value throws.
+info: _
 features: [iterator-helpers]
 ---*/
-
 
 const iter = [].values();
 assert.throws(TypeError, () => iter.reduce((x, y) => x + y));

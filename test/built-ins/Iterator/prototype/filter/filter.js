@@ -2,10 +2,10 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Smoke test of filter.
+info: _
 features: [iterator-helpers]
 ---*/
-
 
 let iter = [1, 2, 3].values().filter(x => x % 2);
 

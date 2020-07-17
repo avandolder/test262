@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Result of fn is coerced to a boolean.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
@@ -16,22 +17,22 @@ async function check(value, expected) {
 }
 
 (async () => {
-  check(true, true);
-  check(1, true);
-  check([], true);
-  check({}, true);
-  check('test', true);
+  await check(true, true);
+  await check(1, true);
+  await check([], true);
+  await check({}, true);
+  await check('test', true);
 
-  check(false, false);
-  check(0, false);
-  check('', false);
-  check(null, false);
-  check(undefined, false);
-  check(NaN, false);
-  check(-0, false);
-  check(0n, false);
-  check(createIsHTMLDDA(), false);
-  check(Promise.resolve(false), false);
+  await check(false, false);
+  await check(0, false);
+  await check('', false);
+  await check(null, false);
+  await check(undefined, false);
+  await check(NaN, false);
+  await check(-0, false);
+  await check(0n, false);
+  await check(createIsHTMLDDA(), false);
+  await check(Promise.resolve(false), false);
 })().then($DONE, $DONE);
 
 if (typeof reportCompare === 'function')

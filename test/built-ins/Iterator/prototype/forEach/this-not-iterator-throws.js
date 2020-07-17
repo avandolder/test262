@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Throw if this is not an iterator.
+info: _
 features: [iterator-helpers]
 ---*/
 

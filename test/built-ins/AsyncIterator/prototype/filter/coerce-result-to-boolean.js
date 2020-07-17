@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Result of fn is coerced to a boolean.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/

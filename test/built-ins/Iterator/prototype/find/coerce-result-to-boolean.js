@@ -2,7 +2,12 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Result of fn is coerced to a boolean.
+info: |
+  2.1.4.13 %Iterator.prototype%.find ( fn )
+  3. Repeat,
+    ...
+    f. If ToBoolean(result) is true, return ? IteratorClose(iterated, NormalCompletion(value)).
 features: [iterator-helpers]
 ---*/
 

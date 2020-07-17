@@ -2,13 +2,20 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: find only accesses next on the iterator once, and never accesses @@iterator.
+info: |
+  2.1.4.13 %Iterator.prototype%.find ( fn )
+  1. Let iterated be ? GetIteratorDirect(this value).
+
+  1.1.1 GetIteratorDirect ( obj )
+  1. If Type(obj) is not Object, throw a TypeError exception.
+  2. Let nextMethod be ? GetV(obj, "next").
+  3. If IsCallable(nextMethod) is false, throw a TypeError exception.
+  4. Let iteratorRecord be Record { [[Iterator]]: obj, [[NextMethod]]: nextMethod, [[Done]]: false }.
+  5. Return iteratorRecord.
 features: [iterator-helpers]
 ---*/
 
-//
-// This test checks that %Iterator.prototype%.find only gets the `next` method off of the
-// iterator once, and never accesses the @@iterator property.
 const log = [];
 const handlerProxy = new Proxy({}, {
   get: (target, key, receiver) => (...args) => {

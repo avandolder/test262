@@ -2,10 +2,10 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Smoke test for reduce.
+info: _
 features: [iterator-helpers]
 ---*/
-
 
 const reducer = (acc, value) => acc + value;
 const iterator = [1, 2, 3].values();

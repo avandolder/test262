@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If getting value fails, don't close the iterator.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/

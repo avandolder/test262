@@ -2,11 +2,11 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If calling next throws, do not close the iterator.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
-
 
 class TestIterator extends AsyncIterator {
   next() {
@@ -26,6 +26,4 @@ assert.sameValue(iter.closed, false);
 iter.some(fn).then(() => assert.sameValue(true, false, 'expected error'), err => {
   assert.sameValue(err instanceof Error, true);
   assert.sameValue(iter.closed, false);
-});
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+}).then($DONE, $DONE);

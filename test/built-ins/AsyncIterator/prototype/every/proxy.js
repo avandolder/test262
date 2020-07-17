@@ -2,13 +2,12 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Only access next on the iterator once, and never access @@asyncIterator.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
 
-// This test checks that %AsyncIterator.prototype%.every only gets the `next` method off of the
-// iterator once, and never accesses the @@asyncIterator property.
 const log = [];
 const handlerProxy = new Proxy({}, {
   get: (target, key, receiver) => (...args) => {

@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Smoke test of toArray.
+info: _
 features: [iterator-helpers]
 ---*/
 

@@ -2,10 +2,10 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If calling next throws, do not close the iterator.
+info: _
 features: [iterator-helpers]
 ---*/
-
 
 class TestIterator extends Iterator {
   next() {

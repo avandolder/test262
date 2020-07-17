@@ -2,11 +2,11 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: _
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
-
 
 let x = {a: () => true};
 
@@ -18,7 +18,7 @@ async function* gen() {
 gen().some(() => {}).then(
   () => assert.sameValue(true, false, 'expected error'),
   err => assert.sameValue(err instanceof Error, true),
-);
+).then($DONE, $DONE);
 
 x.a = () => {
   throw Error();

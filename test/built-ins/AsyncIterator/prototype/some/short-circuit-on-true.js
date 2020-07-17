@@ -2,11 +2,11 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Short circuit on fn returning true.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
-
 
 async function* gen() {
   yield 1;
@@ -22,7 +22,7 @@ const fn = (value) => {
 gen().some(fn).then(result => {
   assert.sameValue(result, true);
   assert.sameValue(log.join(','), '1,2');
-});
+}).then($DONE, $DONE);
 
 if (typeof reportCompare === 'function')
   reportCompare(0, 0);

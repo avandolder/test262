@@ -2,12 +2,9 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: `name` property of Iterator.prototype.find.
+info: _
 features: [iterator-helpers]
----*/
-
-/*---
-  `name` property of Iterator.prototype.find.
 ---*/
 
 const propDesc = Reflect.getOwnPropertyDescriptor(Iterator.prototype.find, 'name');

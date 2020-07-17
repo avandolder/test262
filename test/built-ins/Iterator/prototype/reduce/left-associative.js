@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: reduce processes the iterator from left to right.
+info: _
 features: [iterator-helpers]
 ---*/
 

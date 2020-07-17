@@ -2,11 +2,11 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If fn is not callable, throw a TypeError.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/
-
 
 async function *gen() {
   yield 1;
@@ -23,14 +23,13 @@ function check(fn) {
   );
 }
 
-check();
-check(undefined);
-check(null);
-check(0);
-check(false);
-check('');
-check(Symbol(''));
-check({});
-
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+(async () => {
+  await check();
+  await check(undefined);
+  await check(null);
+  await check(0);
+  await check(false);
+  await check('');
+  await check(Symbol(''));
+  await check({});
+})().then($DONE, $DONE);

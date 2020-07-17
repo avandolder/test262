@@ -2,10 +2,13 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If reducer is not callable, throw a TypeError.
+info: |
+  2.1.4.8 %Iterator.prototype%.reduce ( reducer [ , initialValue ] )
+  ...
+  2. If IsCallable(reducer) is false, throw a TypeError exception.
 features: [iterator-helpers]
 ---*/
-
 
 class TestIterator extends Iterator {
   next() {

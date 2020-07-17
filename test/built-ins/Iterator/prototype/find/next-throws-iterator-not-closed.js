@@ -2,10 +2,14 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If calling next throws, do not close the iterator.
+info: |
+  2.1.4.13 %Iterator.prototype%.find ( fn )
+  ...
+  3. Repeat,
+    a. Let next be ? IteratorStep(iterated).
 features: [iterator-helpers]
 ---*/
-
 
 class TestIterator extends Iterator {
   next() {

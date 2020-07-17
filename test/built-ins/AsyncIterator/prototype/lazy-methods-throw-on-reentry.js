@@ -2,7 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Lazy methods throw a TypeError if reentered while executing.
+info: _
 flags: [async]
 features: [iterator-helpers]
 ---*/

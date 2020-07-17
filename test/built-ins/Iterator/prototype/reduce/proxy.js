@@ -2,7 +2,17 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: reduce only accesses next on the iterator once, and never accesses @@iterator.
+info: |
+  2.1.4.8 %Iterator.prototype%.reduce ( reducer [ , initialValue ] )
+  1. Let iterated be ? GetIteratorDirect(this value).
+
+  1.1.1 GetIteratorDirect ( obj )
+  1. If Type(obj) is not Object, throw a TypeError exception.
+  2. Let nextMethod be ? GetV(obj, "next").
+  3. If IsCallable(nextMethod) is false, throw a TypeError exception.
+  4. Let iteratorRecord be Record { [[Iterator]]: obj, [[NextMethod]]: nextMethod, [[Done]]: false }.
+  5. Return iteratorRecord.
 features: [iterator-helpers]
 ---*/
 

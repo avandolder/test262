@@ -2,12 +2,12 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: _
+info: _
 features: [iterator-helpers]
 ---*/
 
-
-const otherGlobal = newGlobal({newCompartment: true});
+const otherGlobal = $262.createRealm().global;
 
 let array = [1, 2, 3].values().toArray();
 assert.sameValue(array instanceof Array, true);

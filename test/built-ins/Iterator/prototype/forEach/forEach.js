@@ -2,10 +2,10 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Smoke test for forEach.
+info: _
 features: [iterator-helpers]
 ---*/
-
 
 const log = [];
 const fn = (value) => log.push(value);

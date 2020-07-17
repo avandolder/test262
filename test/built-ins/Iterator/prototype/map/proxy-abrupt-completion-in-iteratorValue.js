@@ -2,16 +2,8 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
-features: [iterator-helpers]
----*/
-
-//
-
-/*---
-esid: pending
 description: %Iterator.prototype%.map does not call return when IteratorValue returns an abrupt completion.
-info: >
+info: _
 features: [iterator-helpers]
 ---*/
 

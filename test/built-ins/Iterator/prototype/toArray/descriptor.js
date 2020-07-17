@@ -2,12 +2,9 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Descriptor property of Iterator.prototype.toArray
+info: _
 features: [iterator-helpers]
----*/
-
-/*---
-  Descriptor property of Iterator.prototype.toArray
 ---*/
 
 const propDesc = Reflect.getOwnPropertyDescriptor(Iterator.prototype, 'toArray');

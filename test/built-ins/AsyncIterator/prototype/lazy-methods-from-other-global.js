@@ -2,9 +2,10 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: Lazy methods from another realm work in on iterators from this realm.
+info: _
 flags: [async]
-features: [iterator-helpers]
+features: [cross-realm, iterator-helpers]
 ---*/
 
 async function* gen(values) {

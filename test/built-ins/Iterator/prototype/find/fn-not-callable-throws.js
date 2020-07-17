@@ -2,10 +2,13 @@
 // This code is governed by the license found in the LICENSE file.
 /*---
 esid: pending
-description:
+description: If fn is not callable, throw a TypeError.
+info: |
+  2.1.4.13 %Iterator.prototype%.find ( fn )
+  ...
+  2. If IsCallable(fn) is false, throw a TypeError exception.
 features: [iterator-helpers]
 ---*/
-
 
 const iter = [].values();
 
