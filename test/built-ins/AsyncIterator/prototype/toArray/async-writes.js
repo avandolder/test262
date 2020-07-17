@@ -18,7 +18,7 @@ async function* gen() {
 gen().toArray().then(
   () => assert.sameValue(true, false, 'expected error'),
   err => assert.sameValue(err instanceof Error, true),
-);
+).then($DONE, $DONE);
 
 x.a = () => {
   throw Error();
