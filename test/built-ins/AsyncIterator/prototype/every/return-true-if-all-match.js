@@ -22,5 +22,5 @@ const fn = x => x % 2 == 1;
   assert.sameValue(await empty().every(x => x), true);
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

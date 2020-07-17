@@ -11,5 +11,5 @@ class TestIterator extends AsyncIterator {
 
 assert.sameValue(new TestIterator() instanceof AsyncIterator, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

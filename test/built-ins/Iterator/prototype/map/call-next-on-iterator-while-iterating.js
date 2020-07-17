@@ -20,5 +20,5 @@ assert.sameValue(items[1], 2);
 assert.sameValue(items[2], 9);
 assert.sameValue(items[3], undefined);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

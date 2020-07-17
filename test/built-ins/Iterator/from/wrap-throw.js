@@ -60,5 +60,5 @@ const wrapWithThrow = Iterator.from(iterWithThrow);
 
 assert.sameValue(wrapWithThrow.throw(1), 1);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

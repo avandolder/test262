@@ -46,5 +46,5 @@ assert.sameValue(iter.closed, false);
 assert.throws(TestError, () => mapped.next());
 assert.sameValue(iter.closed, true);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

@@ -25,5 +25,5 @@ for (const method of methods) {
   }
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

@@ -56,5 +56,5 @@ for (const firstMethod of methods) {
   }
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

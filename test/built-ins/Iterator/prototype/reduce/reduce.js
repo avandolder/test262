@@ -12,5 +12,5 @@ const iterator = [1, 2, 3].values();
 
 assert.sameValue(iterator.reduce(reducer, 0), 6);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

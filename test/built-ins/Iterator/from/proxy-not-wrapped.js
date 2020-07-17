@@ -36,5 +36,5 @@ get: next
 getPrototypeOf: undefined`
 );
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

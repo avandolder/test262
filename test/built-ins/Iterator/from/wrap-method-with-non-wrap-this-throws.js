@@ -45,5 +45,5 @@ assert.throws(TypeError, () => throwMethod.call('test'));
 assert.throws(TypeError, () => throwMethod.call(Object(1)));
 assert.throws(TypeError, () => throwMethod.call({}));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -32,5 +32,5 @@ iterator.forEach(x => x).then(() => assert.sameValue(true, false, 'expected erro
   assert.sameValue(iterator.closed, false, 'iterator remains unclosed');
 }).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

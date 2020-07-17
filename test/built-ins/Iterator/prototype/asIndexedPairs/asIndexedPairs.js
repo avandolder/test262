@@ -19,5 +19,5 @@ for (const [i, v] of [[0, 1], [1, 2], [2, 3]]) {
 
 assert.sameValue(iter.next().done, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

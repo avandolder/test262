@@ -13,5 +13,5 @@ async function *gen() {}
 
 gen().reduce(reducer, 1).then(result => assert.sameValue(result, 1)).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

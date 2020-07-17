@@ -49,5 +49,5 @@ assert.throws(TypeError, () => iter.reduce(sum));
 iter = new TestIterator(Symbol(''));
 assert.throws(TypeError, () => iter.reduce(sum));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

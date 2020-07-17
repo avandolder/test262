@@ -19,5 +19,5 @@ assert.throws(TypeError, () => iterator(false).map(mapper).next());
 assert.throws(TypeError, () => iterator('').map(mapper).next());
 assert.throws(TypeError, () => iterator(Symbol()).map(mapper).next());
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

@@ -28,5 +28,5 @@ assert.sameValue(iter, Iterator.from(iter));
 const arrayIter = [1, 2, 3][Symbol.iterator]();
 assert.sameValue(arrayIter, Iterator.from(arrayIter));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

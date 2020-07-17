@@ -35,5 +35,5 @@ const wrapper = Iterator.from(iter);
 assert.sameValue(iter !== wrapper, true);
 assert.sameValue(wrapper instanceof Iterator, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

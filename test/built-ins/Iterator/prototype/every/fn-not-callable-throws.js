@@ -19,5 +19,5 @@ assert.throws(TypeError, () => iter.every(''));
 assert.throws(TypeError, () => iter.every(Symbol('')));
 assert.throws(TypeError, () => iter.every({}));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

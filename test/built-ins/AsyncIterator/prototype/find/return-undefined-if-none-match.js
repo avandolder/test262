@@ -22,5 +22,5 @@ async function* empty() {}
   await empty().find(x => x).then(result => assert.sameValue(result, undefined));
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

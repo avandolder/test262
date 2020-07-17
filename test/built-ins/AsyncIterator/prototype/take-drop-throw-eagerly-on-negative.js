@@ -24,5 +24,5 @@ for (const method of methods) {
   method(-0.9);
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

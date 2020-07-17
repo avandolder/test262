@@ -34,5 +34,5 @@ class TestIterator extends AsyncIterator {
   assert.sameValue(iter.counter, 2);
 })().then($DONE, $DONE);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

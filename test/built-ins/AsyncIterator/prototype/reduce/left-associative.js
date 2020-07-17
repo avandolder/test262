@@ -21,5 +21,5 @@ async function* gen() {
   assert.sameValue(result, '((1+2)+3)');
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

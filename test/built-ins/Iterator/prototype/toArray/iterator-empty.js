@@ -13,5 +13,5 @@ const array = iter.toArray();
 assert.sameValue(Array.isArray(array), true);
 assert.sameValue(array.length, 0);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

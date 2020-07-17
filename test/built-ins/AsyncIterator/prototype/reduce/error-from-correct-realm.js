@@ -21,5 +21,5 @@ otherGlobal.AsyncIterator.prototype.reduce.call(gen()).then(() => assert.sameVal
   );
 }).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -17,5 +17,5 @@ array = otherGlobal.Iterator.prototype.toArray.call([1, 2, 3].values());
 assert.sameValue(array instanceof Array, false);
 assert.sameValue(array instanceof otherGlobal.Array, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

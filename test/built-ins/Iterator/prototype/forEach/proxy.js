@@ -55,5 +55,5 @@ defineProperty: value
 get: value`
 );
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

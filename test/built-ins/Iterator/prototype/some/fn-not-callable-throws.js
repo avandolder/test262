@@ -21,5 +21,5 @@ assert.throws(TypeError, () => iter.some(''));
 assert.throws(TypeError, () => iter.some(Symbol('')));
 assert.throws(TypeError, () => iter.some({}));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -36,5 +36,5 @@ get: throw
 get: throw`
 );
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

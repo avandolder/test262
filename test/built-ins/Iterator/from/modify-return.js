@@ -25,5 +25,5 @@ let nullResult = wrap.return(2);
 assert.sameValue(nullResult.done, true);
 assert.sameValue(nullResult.value, 2);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

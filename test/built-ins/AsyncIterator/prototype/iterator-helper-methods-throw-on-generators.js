@@ -16,5 +16,5 @@ assert.throws(TypeError, () => asyncIteratorHelperProto.next.call(gen()));
 assert.throws(TypeError, () => asyncIteratorHelperProto.return.call(gen()));
 assert.throws(TypeError, () => asyncIteratorHelperProto.throw.call(gen()));
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

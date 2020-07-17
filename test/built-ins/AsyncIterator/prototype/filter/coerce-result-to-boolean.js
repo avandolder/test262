@@ -27,5 +27,5 @@ const falsyValues = [false, 0, '', null, undefined, NaN, -0, 0n, createIsHTMLDDA
   assert.sameValue(value, undefined);
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -23,5 +23,5 @@ assert.throws(TypeError, () => Iterator.from({ [Symbol.iterator]: "" }));
 assert.throws(TypeError, () => Iterator.from({ [Symbol.iterator]: {} }));
 assert.throws(TypeError, () => Iterator.from({ [Symbol.iterator]: Symbol('') }));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

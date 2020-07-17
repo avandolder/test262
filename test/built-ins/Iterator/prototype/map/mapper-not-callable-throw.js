@@ -28,5 +28,5 @@ assert.throws(TypeError, () => [].values().map(''));
 assert.throws(TypeError, () => Iterator.prototype.map(Symbol('')));
 assert.throws(TypeError, () => [].values().map(Symbol('')));
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

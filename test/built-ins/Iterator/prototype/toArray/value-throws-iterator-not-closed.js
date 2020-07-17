@@ -34,5 +34,5 @@ assert.sameValue(iterator.closed, false, 'iterator starts unclosed');
 assert.throws(TestError, () => iterator.toArray());
 assert.sameValue(iterator.closed, false, 'iterator remains unclosed');
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

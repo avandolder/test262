@@ -32,5 +32,5 @@ iterator.reduce((x, y) => x + y, 0).then(() => assert.sameValue(true, false, 'ex
   assert.sameValue(iterator.closed, false, 'iterator remains unclosed');
 }).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

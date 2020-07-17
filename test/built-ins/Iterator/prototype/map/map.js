@@ -24,5 +24,5 @@ assert.sameValue(map.enumerable, false);
 assert.sameValue(map.writable, true);
 assert.sameValue(map.configurable, true);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

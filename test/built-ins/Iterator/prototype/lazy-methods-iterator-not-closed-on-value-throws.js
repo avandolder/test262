@@ -42,5 +42,5 @@ for (const method of methods) {
   assert.sameValue(iterator.closed, false);
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

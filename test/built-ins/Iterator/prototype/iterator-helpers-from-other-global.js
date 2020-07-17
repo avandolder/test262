@@ -68,5 +68,5 @@ for (const [method, arg] of methods) {
   checkIterResult(helper.next(), true, undefined);
 }
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

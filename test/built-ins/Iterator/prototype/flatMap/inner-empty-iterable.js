@@ -32,5 +32,5 @@ result = iter.next();
 assert.sameValue(result.value, undefined);
 assert.sameValue(result.done, true);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

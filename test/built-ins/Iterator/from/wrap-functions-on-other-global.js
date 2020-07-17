@@ -35,5 +35,5 @@ assert.throws(TestError, thisWrap.return.bind(otherWrap));
 
 checkIterResult(thisWrap.throw.call(otherWrap, 'value'), true, 'value');
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -24,5 +24,5 @@ assert.throws(TypeError, () => Iterator.prototype.map.call({}, mapper));
 assert.throws(TypeError, () => Iterator.prototype.map.call('', mapper));
 assert.throws(TypeError, () => Iterator.prototype.map.call(new Symbol(''), mapper));
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

@@ -21,5 +21,5 @@ for (const item of array) {
   assert.sameValue(item, expect);
 }
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

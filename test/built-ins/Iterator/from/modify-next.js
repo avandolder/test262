@@ -31,5 +31,5 @@ let {done, value} = wrap.next();
 assert.sameValue(done, false);
 assert.sameValue(value, 0);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

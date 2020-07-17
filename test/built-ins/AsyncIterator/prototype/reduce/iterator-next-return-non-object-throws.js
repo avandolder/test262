@@ -37,5 +37,5 @@ function check(value) {
   await check(Symbol(''));
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

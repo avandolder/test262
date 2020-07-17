@@ -15,5 +15,5 @@ features: [iterator-helpers]
 const iter = [].values();
 assert.throws(TypeError, () => iter.reduce((x, y) => x + y));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

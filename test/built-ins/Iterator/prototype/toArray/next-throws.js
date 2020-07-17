@@ -17,5 +17,5 @@ const iter = new TestIterator();
 
 assert.throws(Error, () => iter.toArray());
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -17,5 +17,5 @@ for (const v of [1, 3]) {
 
 assert.sameValue(iter.next().done, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

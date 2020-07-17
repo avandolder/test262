@@ -14,8 +14,8 @@ async function* gen() {
   yield 5;
 }
 const fn = x => x % 2 == 0;
-
-gen().some(fn).then(result => assert.sameValue(result, false)).then($DONE, $DONE);
-
 async function* empty() {}
-empty().some(x => x).then(result => assert.sameValue(result, false)).then($DONE, $DONE);
+
+gen().some(fn).then(result => assert.sameValue(result, false)).then(() =>
+  empty().some(x => x).then(result => assert.sameValue(result, false)),
+).then($DONE, $DONE);

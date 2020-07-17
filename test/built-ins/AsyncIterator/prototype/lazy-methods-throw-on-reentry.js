@@ -25,6 +25,6 @@ const methods = ['map', 'filter', 'flatMap'];
   }
 })().then($DONE, $DONE);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+
 

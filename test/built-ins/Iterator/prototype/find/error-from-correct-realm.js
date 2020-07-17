@@ -20,5 +20,5 @@ assert.throws(
   'TypeError comes from the realm of the method.',
 );
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

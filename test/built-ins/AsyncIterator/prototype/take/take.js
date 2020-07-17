@@ -26,5 +26,5 @@ let iter = gen().take(2);
   await iter.next().then(({done}) => assert.sameValue(done, true));
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

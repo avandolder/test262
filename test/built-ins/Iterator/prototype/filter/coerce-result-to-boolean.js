@@ -26,5 +26,5 @@ const result = falsyValues.values().filter(x => x).next();
 assert.sameValue(result.done, true);
 assert.sameValue(result.value, undefined);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

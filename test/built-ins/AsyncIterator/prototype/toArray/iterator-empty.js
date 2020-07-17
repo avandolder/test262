@@ -14,5 +14,5 @@ gen().toArray().then(array => {
   assert.sameValue(array.length, 0);
 }).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

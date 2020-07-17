@@ -57,5 +57,5 @@ get: return
 close iterator`
 );
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

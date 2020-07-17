@@ -26,5 +26,5 @@ otherGlobal.AsyncIterator.prototype.toArray.call(gen()).then(array => {
   assert.sameValue(array instanceof otherGlobal.Array, true);
 });
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

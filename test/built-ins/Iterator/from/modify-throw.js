@@ -21,5 +21,5 @@ class TestError extends Error {}
 iter.throw = () => { throw new TestError(); };
 assert.throws(TestError, () => wrap.throw());
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

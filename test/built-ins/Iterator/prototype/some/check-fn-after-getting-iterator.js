@@ -33,5 +33,5 @@ assert.sameValue(
 get: next`
 );
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

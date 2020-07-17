@@ -28,5 +28,5 @@ assert.sameValue([NaN].values().some(fn), false);
 assert.sameValue([-0].values().some(fn), false);
 assert.sameValue([0n].values().some(fn), false);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

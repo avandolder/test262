@@ -38,5 +38,5 @@ assert.sameValue(nextWasPassed, 4);
 assert.sameValue(mappedIterator.next(5).done, true);
 assert.sameValue(nextWasPassed, 4);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

@@ -27,5 +27,5 @@ for (const method of methods) {
   assert.throws(TypeError, () => method(objectWithToPrimitive));
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

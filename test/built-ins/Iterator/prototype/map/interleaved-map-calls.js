@@ -18,5 +18,5 @@ assert.sameValue(mapped1.next().value, 3);
 assert.sameValue(mapped1.next().done, true);
 assert.sameValue(mapped2.next().done, true);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

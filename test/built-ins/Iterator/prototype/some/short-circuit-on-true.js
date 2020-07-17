@@ -24,5 +24,5 @@ const fn = (value) => {
 assert.sameValue(iter.some(fn), true);
 assert.sameValue(log.join(','), '1,2');
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

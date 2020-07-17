@@ -46,5 +46,5 @@ result = wrap.next();
 assert.sameValue(result.done, true);
 assert.sameValue(result.value, undefined);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -23,5 +23,5 @@ assert.sameValue(iter.every(fn), true);
 
 assert.sameValue([].values().every(fn), true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

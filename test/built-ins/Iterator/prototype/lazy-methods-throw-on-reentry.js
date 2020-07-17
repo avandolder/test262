@@ -20,5 +20,5 @@ for (const method of methods) {
   assert.throws(TypeError, () => iterHelper.next());
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

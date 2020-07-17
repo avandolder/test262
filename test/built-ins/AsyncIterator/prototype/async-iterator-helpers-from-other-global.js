@@ -69,5 +69,5 @@ const {next: otherNext, return: otherReturn, throw: otherThrow} =
   }
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -23,5 +23,5 @@ assert.sameValue(returnResult.value, 1);
 
 assert.throws(Error, () => wrap.throw(new Error()));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

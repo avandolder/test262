@@ -26,5 +26,5 @@ gen().toArray().then(array => {
   }
 }).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

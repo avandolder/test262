@@ -19,5 +19,5 @@ assert.throws(TypeError, Iterator.prototype.reduce.bind(undefined, sum));
 assert.throws(TypeError, Iterator.prototype.reduce.bind({}, sum));
 assert.throws(TypeError, Iterator.prototype.reduce.bind({next: 0}, sum));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

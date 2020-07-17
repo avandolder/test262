@@ -17,5 +17,5 @@ assert.sameValue(propertyDescriptor.enumerable, false);
 assert.sameValue(propertyDescriptor.writable, false);
 assert.sameValue(propertyDescriptor.configurable, true);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

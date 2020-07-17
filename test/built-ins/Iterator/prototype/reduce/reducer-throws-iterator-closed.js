@@ -31,5 +31,5 @@ assert.sameValue(iter.closed, false);
 assert.throws(Error, () => iter.reduce(reducer));
 assert.sameValue(iter.closed, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

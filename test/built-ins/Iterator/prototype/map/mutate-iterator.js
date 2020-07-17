@@ -17,5 +17,5 @@ assert.sameValue(iterator.next().value, 6);
 assert.sameValue(iterator.next().value, 8);
 assert.sameValue(iterator.next().done, true);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

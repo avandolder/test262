@@ -33,6 +33,6 @@ assert.sameValue(result.done, true);
 assert.sameValue(result.value, undefined);
 assert.sameValue(iter.closed, true);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+
 

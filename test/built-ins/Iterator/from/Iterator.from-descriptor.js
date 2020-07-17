@@ -11,5 +11,5 @@ assert.sameValue(propDesc.writable, true);
 assert.sameValue(propDesc.enumerable, false);
 assert.sameValue(propDesc.configurable, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

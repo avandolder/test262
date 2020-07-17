@@ -14,5 +14,5 @@ const iter = [1, 2, 3].values();
 assert.sameValue(iter.forEach(fn), undefined);
 assert.sameValue(log.join(','), '1,2,3');
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -13,5 +13,5 @@ gen().reduce((x, y) => x + y).then(() => assert.sameValue(true, false, 'expected
   assert.sameValue(err instanceof TypeError, true);
 }).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

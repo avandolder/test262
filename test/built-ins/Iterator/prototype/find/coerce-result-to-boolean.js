@@ -31,5 +31,5 @@ assert.sameValue([array].values().find(fn), array);
 let object = {};
 assert.sameValue([object].values().find(fn), object);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

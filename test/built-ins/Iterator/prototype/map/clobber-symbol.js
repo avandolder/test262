@@ -16,5 +16,5 @@ assert.sameValue(
   '`%Iterator.prototype%.map` still works after Symbol has been clobbered'
 );
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

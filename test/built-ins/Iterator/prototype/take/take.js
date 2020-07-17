@@ -22,5 +22,5 @@ assert.sameValue(iter.next().done, true);
 // which converts to 0.
 assert.sameValue(['test'].values().take().next().done, true);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

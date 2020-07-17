@@ -20,5 +20,5 @@ assert.throws(TypeError, Iterator.prototype.find.bind(undefined, fn));
 assert.throws(TypeError, Iterator.prototype.find.bind({}, fn));
 assert.throws(TypeError, Iterator.prototype.find.bind({next: 0}, fn));
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

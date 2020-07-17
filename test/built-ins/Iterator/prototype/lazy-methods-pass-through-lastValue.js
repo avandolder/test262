@@ -32,6 +32,6 @@ for (const method of methods) {
   assert.sameValue(Array.isArray(result.value) ? result.value[1] : result.value, 'last value');
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+
 

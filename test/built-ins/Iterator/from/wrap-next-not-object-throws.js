@@ -23,5 +23,5 @@ assert.throws(TypeError, () => iter(false).next());
 assert.throws(TypeError, () => iter('test').next());
 assert.throws(TypeError, () => iter(Symbol('')).next());
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -89,5 +89,5 @@ set: value,3
 get: value`
 );
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

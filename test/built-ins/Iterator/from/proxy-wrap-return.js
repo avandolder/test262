@@ -36,5 +36,5 @@ get: return
 get: return`
 );
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

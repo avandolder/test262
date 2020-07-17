@@ -28,5 +28,5 @@ iter.some(fn).then(() => assert.sameValue(true, false, 'expected error'), err =>
   assert.sameValue(iter.closed, true);
 }).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

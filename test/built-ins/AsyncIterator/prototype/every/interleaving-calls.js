@@ -28,5 +28,5 @@ Promise.all([gen(1).every(() => true), gen(2).every(() => true)]).then(
   }
 ).then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

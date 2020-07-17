@@ -35,5 +35,5 @@ function check(value, expected) {
   await check(Promise.resolve(false), false);
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

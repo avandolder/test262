@@ -28,5 +28,5 @@ iter.reduce(reducer).then(() => assert.sameValue(true, false, 'expected error'),
   assert.sameValue(iter.closed, true);
 });
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

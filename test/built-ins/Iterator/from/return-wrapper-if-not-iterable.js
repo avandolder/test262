@@ -37,5 +37,5 @@ assert.sameValue(
   'wrapper is an iterable.'
 );
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

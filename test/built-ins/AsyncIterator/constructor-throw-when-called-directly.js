@@ -8,5 +8,5 @@ features: [iterator-helpers]
 
 assert.throws(TypeError, () => new AsyncIterator());
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

@@ -33,5 +33,5 @@ for (const method of methods) {
   assert.sameValue(result.testProperty, undefined);
 }
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+

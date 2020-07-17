@@ -25,5 +25,5 @@ assert.sameValue(iter.closed, false);
 assert.throws(Error, () => iter.forEach(fn));
 assert.sameValue(iter.closed, false);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

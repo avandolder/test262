@@ -39,6 +39,6 @@ const methods = [
   }
 })().then($DONE, $DONE);
 
-if (typeof reportCompare == 'function')
-  reportCompare(0, 0);
+
+
 

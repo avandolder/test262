@@ -24,5 +24,5 @@ async function check(x) {
   check({next: 0});
 })().then($DONE, $DONE);
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+

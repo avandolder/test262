@@ -25,5 +25,5 @@ x.a = () => {
   throw Error();
 };
 
-if (typeof reportCompare === 'function')
-  reportCompare(0, 0);
+
+
