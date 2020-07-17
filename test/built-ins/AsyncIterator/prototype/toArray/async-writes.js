@@ -8,7 +8,6 @@ flags: [async]
 features: [iterator-helpers]
 ---*/
 
-
 let x = {a: () => true};
 
 async function* gen() {
@@ -24,6 +23,3 @@ gen().toArray().then(
 x.a = () => {
   throw Error();
 };
-
-
-

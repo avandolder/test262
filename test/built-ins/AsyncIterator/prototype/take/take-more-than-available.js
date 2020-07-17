@@ -27,7 +27,4 @@ async function* gen(values) {
   const result = await iter.next();
   assert.sameValue(result.value, undefined);
   assert.sameValue(result.done, true);
-})();
-
-
-
+})().then($DONE, $DONE);

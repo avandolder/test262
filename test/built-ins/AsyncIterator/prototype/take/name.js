@@ -5,7 +5,6 @@ esid: pending
 description: %AsyncIterator.prototype%.take.name value and descriptor.
 info: >
   17 ECMAScript Standard Built-in Objects
-flags: [async]
 features: [iterator-helpers]
 ---*/
 
@@ -16,6 +15,3 @@ assert.sameValue(propertyDescriptor.value, 'take');
 assert.sameValue(propertyDescriptor.enumerable, false);
 assert.sameValue(propertyDescriptor.writable, false);
 assert.sameValue(propertyDescriptor.configurable, true);
-
-
-

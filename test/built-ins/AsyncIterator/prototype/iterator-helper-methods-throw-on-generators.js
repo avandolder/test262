@@ -4,7 +4,6 @@
 esid: pending
 description: AsyncIteratorHelper methods throw on generators.
 info: _
-flags: [async]
 features: [iterator-helpers]
 ---*/
 
@@ -15,6 +14,3 @@ const asyncIteratorHelperProto = Object.getPrototypeOf(gen().map(x => x));
 assert.throws(TypeError, () => asyncIteratorHelperProto.next.call(gen()));
 assert.throws(TypeError, () => asyncIteratorHelperProto.return.call(gen()));
 assert.throws(TypeError, () => asyncIteratorHelperProto.throw.call(gen()));
-
-
-

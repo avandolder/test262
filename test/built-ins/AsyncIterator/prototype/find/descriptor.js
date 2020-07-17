@@ -3,7 +3,6 @@
 /*---
 esid: pending
 description: Descriptor property of AsyncIterator.prototype.find
-flags: [async]
 features: [iterator-helpers]
 ---*/
 
@@ -12,6 +11,3 @@ assert.sameValue(typeof propDesc.value, 'function');
 assert.sameValue(propDesc.writable, true);
 assert.sameValue(propDesc.enumerable, false);
 assert.sameValue(propDesc.configurable, true);
-
-
-

@@ -4,7 +4,6 @@
 esid: pending
 description: `name` property of AsyncIterator.prototype.some.
 info: _
-flags: [async]
 features: [iterator-helpers]
 ---*/
 

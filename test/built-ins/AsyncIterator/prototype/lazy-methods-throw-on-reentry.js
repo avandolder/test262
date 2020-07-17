@@ -24,7 +24,3 @@ const methods = ['map', 'filter', 'flatMap'];
     }
   }
 })().then($DONE, $DONE);
-
-
-
-

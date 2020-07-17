@@ -16,15 +16,14 @@ async function* gen() {
   yield 3;
 }
 
-gen().toArray().then(array => {
-  assert.sameValue(array instanceof Array, true);
-  assert.sameValue(array instanceof otherGlobal.Array, false);
-});
+(async () => {
+  await gen().toArray().then(array => {
+    assert.sameValue(array instanceof Array, true);
+    assert.sameValue(array instanceof otherGlobal.Array, false);
+  });
 
-otherGlobal.AsyncIterator.prototype.toArray.call(gen()).then(array => {
-  assert.sameValue(array instanceof Array, false);
-  assert.sameValue(array instanceof otherGlobal.Array, true);
-});
-
-
-
+  await otherGlobal.AsyncIterator.prototype.toArray.call(gen()).then(array => {
+    assert.sameValue(array instanceof Array, false);
+    assert.sameValue(array instanceof otherGlobal.Array, true);
+  });
+})().then($DONE, $DONE);

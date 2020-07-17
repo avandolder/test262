@@ -26,7 +26,4 @@ assert.sameValue(iter.closed, false);
 iter.reduce(reducer).then(() => assert.sameValue(true, false, 'expected error'), err => {
   assert.sameValue(err instanceof Error, true);
   assert.sameValue(iter.closed, true);
-});
-
-
-
+}).then($DONE, $DONE);

@@ -38,7 +38,4 @@ iterTake.next().then(
       }
     );
   }
-);
-
-
-
+).then($DONE, $DONE);
